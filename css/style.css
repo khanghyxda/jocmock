@@ -1,0 +1,222 @@
+
+body, title {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.btn {
+    border-radius: 1px;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control-sm {
+    border-radius: 0rem;
+}
+
+.label-login {
+    font-size: 13px; 
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+.navbar {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 0px;
+}
+.bd-navbar {
+    background-color: #fff;
+    box-shadow: none;
+    min-height: 52px;
+}
+.navbar-expand>.container{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.bd-links {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bd-sidenav .active {
+    font-weight: bold;
+    background: rgba(12,13,14,0.05);
+    color: #0C0D0E;
+    border-right: 2px solid #F48024;
+}
+
+.bd-sidenav li {
+    padding: 2px 0px;
+}
+
+.headline {
+    font-size: 22px !important;
+    color: #242729;
+}
+
+.bd-content {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.envelope-on, .envelope-off, .vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, 
+.star-on, .star-off, .comment-up-off, .comment-up-on, .comment-flag, .comment-flag-off, 
+.comment-flag-on, .edited-yes, .feed-icon, .vote-accepted-off, .vote-accepted-on, 
+.vote-accepted-bounty, .badge-earned-check, .delete-tag, .grippie, .expander-arrow-hide, 
+.expander-arrow-show, .expander-arrow-small-hide, .expander-arrow-small-show, 
+.anonymous-gravatar, .badge1, .badge2, .badge3 {
+    background-image: url(../images/sprites.svg),none;
+    background-size: initial;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off, .vote-accepted-off, .vote-accepted-on {
+    display: block;
+    margin: 0 auto;
+    text-indent: -999em;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2px;
+}
+
+.vote-up-off, .vote-down-off, .vote-accepted-off, .star-off, .comment-up-off, .flag-off {
+    cursor: pointer;
+}
+
+.vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on, .star-on, .star-off, .comment-up-off, .comment-up-on, .comment-flag, .comment-flag-off, .comment-flag-on, .flag-off, .vote-accepted-off, .vote-accepted-on {
+    text-indent: -9999em;
+    font-size: 1px;
+}
+
+.vote-up-off {
+    background-position: 0 -170px;
+}
+
+.vote-up-on {
+    background-position: -40px -170px;
+}
+
+.vote-down-off {
+    background-position: 0 -220px;
+    margin-bottom: 8px;
+}
+
+.vote-down-on {
+    background-position: -40px -220px;
+    margin-bottom: 8px;
+}
+
+.star-off {
+    background-position: 0 -120px;
+}
+
+.star-on {
+    background-position: -40px -120px;
+}
+
+.vote-accepted-off {
+    background-position: 0 -270px;
+}
+
+.vote-accepted-on {
+    background-position: -40px -270px;
+}
+
+.vote-up-off, .vote-up-on, .vote-down-off, .vote-down-on {
+    height: 48px;
+}
+
+.page-link {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    color: #F48024
+}
+
+.note-editor .note-editable {
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+/* .navbar {
+    border-bottom: none;
+}
+
+.navbar .container {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+} */
+
+@media (min-width: 768px){
+.bd-sidebar {
+    top: 52px;
+    z-index: 1000;
+    height: calc(100vh - 52px);
+}
+
+.bd-toc {
+    top: 52px;
+    height: calc(100vh - 52px);
+}
+
+/* .navbar .container {
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+
+
+.main-content {
+    border-left: 1px solid rgba(0,0,0,.1);
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+
+.bd-toc {
+    border-left: 1px solid rgba(0,0,0,.1);
+} */
+
+}
+
+
+.hot-topic-head {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #242729;
+}
+
+.topic-votes {
+    color: #4C9067;
+    background-color: #E4F9D3;
+    min-width: 1rem;
+    white-space: nowrap;
+    width: 2.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto;
+    float: none;
+    border-radius: 2px;
+    font-size: 0.75rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.topic-subject {
+    font-size: 0.75rem;
+}
+
+.topic-subject a {
+    color: #005999;
+}
+
+.topic-subject a:hover {
+    color: #3af;
+}
+
+.bd-toc {
+    overflow-y: none!important;
+}

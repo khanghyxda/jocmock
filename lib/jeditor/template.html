@@ -1,0 +1,63 @@
+<div class="jeditor">
+    <div class="jeditor-bar d-flex flex-row border border-bottom-0">
+        <div class="jeditor-bar-item">
+            <i class="far fa-smile pl-2 pr-1 py-2 text-muted" id="jeditor-emoji" data-toggle="dropdown"></i>
+            <div class="dropdown-menu dropdown-menu-left jeditor-dropdown py-0 border">
+                <div class="emoji-category px-2 py-2 d-flex flex-column">
+                    <div class="flex-grow-1"></div>
+                    <div>
+                        <img src="../../images/emoji.png" class="active px-2 py-2" />
+                        <img src="../../images/emoji.png" class="px-2 py-2" />
+                        <img src="../../images/emoji.png" class="px-2 py-2" />
+                    </div>
+                </div>
+                <div class="emoji-list px-2 py-2">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                        <img src="../../images/emoji.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jeditor-bar-item">
+            <i class="fas fa-file-image px-2 py-2 text-muted" id="jeditor-image"></i>
+            <div class="dropdown-menu jeditor-dropdown">
+                <input type="file" id="fileInput" />
+            </div>
+        </div>
+        <div class="jeditor-bar-item">
+            <i class="far fa-images px-2 py-2 text-muted" id="jeditor-image-url" data-toggle="dropdown"></i>
+            <div class="dropdown-menu jeditor-dropdown">
+                <div class="d-flex flex-row text-muted">
+                    <div class="py-1 px-2">URL</div>
+                    <div class="px-2 flex-grow-1">
+                        <input class="w-100">
+                    </div>
+                    <div class="pr-2">
+                        <button>
+                            <i class="fas fa-check text-muted"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-grow-1"></div>
+        <div class="jeditor-bar-item">
+            <i class="far fa-save pr-2 py-2 text-success" id="jeditor-save"></i>
+        </div>
+        <div class="jeditor-bar-item">
+            <i class="far fa-paper-plane pr-2 py-2 text-primary" id="jeditor-send"></i>
+        </div>
+    </div>
+    <div class="jeditor-text">
+        <textarea class="w-100 border p-2" name="" id="" rows="5"></textarea>
+    </div>
+</div>

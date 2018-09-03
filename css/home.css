@@ -1,0 +1,32 @@
+.topic {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topic-title a {
+    color: #005999;
+    cursor: pointer;
+}
+
+.topic-title a:hover {
+    color: #33aaff;
+    text-decoration: none;
+}
+
+
+.vote, .comment, .view {
+    min-width: 3rem;
+}
+
+.topic-time {
+    font-size: 0.75rem;
+}
+
+hr {
+    border-top: 1px solid #eff0f1;
+}
+
+
+.order-group .active i{
+    color: darkorange !important;
+}

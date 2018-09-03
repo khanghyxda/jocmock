@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/summernote/summernote-bs4.css">
+    <link rel="stylesheet" href="lib/tagsinput/tagsinput.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topic.css">
+    <title>Joc</title>
+</head>
+
+<body>
+    <header id="top" class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img id="logo-image" class="logo-image" src="images/logo.jpg" alt="Logo" height="40">
+            </a>
+            <ul class="navbar-nav">
+                <a class="btn btn-sm" href="register.html" style="color: orange">Đăng ký</a>
+                <a class="btn btn-sm" href="login.html">Đăng nhập</a>
+            </ul>
+        </div>
+    </header>
+    <div class="container main-container">
+        <div class="row flex-xl-nowrap main-content">
+            <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                <form class="bd-search d-flex align-items-center">
+                    <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
+                        <input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." autocomplete="off" spellcheck="false"
+                            role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0"
+                            dir="auto" style="position: relative; vertical-align: top;">
+                        <span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;">
+                            <div class="ds-dataset-1"></div>
+                        </span>
+                    </span>
+                    <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#bd-docs-nav"
+                        aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+                            <title>Menu</title>
+                            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="collapse bd-links" id="bd-docs-nav">
+                    <div class="bd-toc-item active">
+                        <ul class="nav bd-sidenav">
+                            <li class="">
+                                <a href="#">
+                                    Góc cười
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    Chuyện trò linh tinh
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="d-none d-xl-block col-xl-2 bd-toc">
+
+            </div>
+            <main class="col-12 col-md-9 col-xl-8 py-md-1 pl-md-3 bd-content" role="main">
+                <div class="py-2 px-2">
+                    <div class="d-flex flex-row">
+                        <div class="flex-grow-1 px-2 pt-2">
+                            <h1 class="headline px-1">Reference: What is variable scope, which variables are accessible from where and what are “undefined
+                                variable” errors?</h1>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+
+                    </div>
+                </div>
+                <hr class="my-1 mx-3">
+                <div class="py-2 px-2 topic">
+                    <div class="d-flex flex-row h-100">
+                        <div class="vote mx-3">
+                            <div class="d-flex flex-column text-center">
+                                <div class="vote-up">
+                                    <a class="vote-up-on" style="color: #f2f2f2;"></a>
+                                </div>
+                                <div class="my-1 vote-count">
+                                    1220
+                                </div>
+                                <div class="vote-down">
+                                    <a class="vote-down-off"></a>
+                                </div>
+                                <div class="vote-star">
+                                    <a class="star-off" href="#">favorite</a>
+                                </div>
+                                <div class="flex-grow-1">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex flex-column mr-2">
+                                <div class="text-left topic-content w-100">
+                                    <p>According to the android documentation, Day_Of_Month is 1-based (ie '1' means the 1st
+                                        day of the month) (see
+                                        <a href="https://developer.android.com/reference/java/util/Calendar#DAY_OF_MONTH" rel="nofollow noreferrer">https://developer.android.com/reference/java/util/Calendar#DAY_OF_MONTH</a> ). </p>
+                                </div>
+                                <div class="d-flex flex-row-reverse mt-2">
+                                    <div class="topic-info">
+                                        <div class="text-muted topic-time">
+                                            <i class="far fa-clock"></i> 15 phút trước
+                                        </div>
+                                        <div class="mt-1 text-muted topic-user">
+                                            <i class="far fa-user"></i> mjsakju
+                                        </div>
+                                    </div>
+                                    <div class="topic-info mr-4">
+                                        <div class="text-muted topic-time">
+                                            <a href="history.html"><i class="fas fa-pencil-alt"></i> sửa 5 phút trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3" id="answers-header">
+                    <div class="subheader answers-subheader">
+                        <h2 data-answercount="7">
+                            7 Answers
+                            <span style="display:none;" itemprop="answerCount">7</span>
+                        </h2>
+                        <div>
+                            <div id="tabs">
+                                <a href="/questions/1478295/what-does-async-false-do-in-jquery-ajax?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first"
+                                    data-value="active" data-shortcut="A">
+                                    active</a>
+                                <a href="/questions/1478295/what-does-async-false-do-in-jquery-ajax?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided"
+                                    data-value="oldest" data-shortcut="O">
+                                    oldest</a>
+                                <a class="youarehere is-selected " href="/questions/1478295/what-does-async-false-do-in-jquery-ajax?answertab=votes#tab-top"
+                                    data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+                                    votes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-3 px-2">
+                    <ul class="pagination pagination-sm mx-2">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </ul>
+                </div>
+                <div class="py-2 px-2 answer">
+                    <div class="d-flex flex-row h-100">
+                        <div class="vote mx-3">
+                            <div class="d-flex flex-column text-center">
+                                <div class="vote-up">
+                                    <a class="vote-up-off" style="color: #f2f2f2;"></a>
+                                </div>
+                                <div class="my-1 vote-count">
+                                    100
+                                </div>
+                                <div class="vote-down">
+                                    <a class="vote-down-off"></a>
+                                </div>
+                                <div class="flex-grow-1">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 comment">
+                            <div class="d-flex flex-column mr-2">
+                                <div class="text-left answer-content w-100">
+                                    <p>This page explains closures so that a programmer can understand them — using working
+                                        JavaScript code. It is not for gurus or functional programmers.</p>
+                                    <p>Closures are
+                                        <em>not hard</em> to understand once the core concept is grokked. However, they are impossible
+                                        to understand by reading any academic papers or academically oriented information
+                                        about them!</p>
+                                </div>
+                                <div class="d-flex flex-row-reverse mt-2">
+                                    <div class="topic-info">
+                                        <div class="text-muted topic-time">
+                                            <i class="far fa-clock"></i> 15 phút trước
+                                        </div>
+                                        <div class="mt-1 text-muted topic-user">
+                                            <i class="far fa-user"></i> mjsakju
+                                        </div>
+                                    </div>
+                                    <div class="topic-info mr-4">
+                                        <div class="text-muted topic-time">
+                                            <i class="fas fa-pencil-alt"></i> sửa 5 phút trước
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="mx-0 my-2 mt-3">
+                                <div class="comment-list">
+                                    <div style="display: block;" class="comment-body">
+                                        <span class="comment-copy">My problem with these and many answers is that they approach it from an abstract,
+                                            theoretical perspective, rather than starting with explaining simply why closures
+                                            are necessary in Javascript and the practical situations in which you use them.
+                                            You end up with a tl;dr article that you have to slog through, all the time thinking,
+                                            "but, why?". I would simply start with: closures are a neat way of dealing with
+                                            the following two realities of JavaScript: a. scope is at the function level,
+                                            not the block level and, b. much of what you do in practice in JavaScript is
+                                            asynchronous/event driven.</span>
+                                        –&nbsp;
+                                        <a href="/users/1088845/jeremy-burton" title="845 reputation" class="comment-user">Jeremy Burton</a>
+                                        <span class="comment-date" dir="ltr">
+                                            <a class="comment-link" href="#comment21592662_111102">
+                                                <span title="2013-03-08 17:22:59Z" class="relativetime-clean">Mar 8 '13 at 17:22</span>
+                                            </a>
+                                        </span>
+                                        <span class="comment-reply" data-uid="11" data-name="Jeremy Burton">
+                                            <i class="fas fa-reply fa-lg"></i>
+                                        </span>
+                                    </div>
+                                    <hr class="mx-0 my-2">
+                                    <div style="display: block;" class="comment-body">
+                                        <span class="comment-copy">For Java programmers, the short answer is that it's the function equivalent of an
+                                            inner class. An inner class also holds an implicit pointer to an instance of
+                                            the outer class, and is used for much the same purpose (that is, creating event
+                                            handlers).
+                                        </span>
+                                        –&nbsp;
+                                        <a href="/users/753725/boris-van-schooten" title="364 reputation" class="comment-user">Boris van Schooten</a>
+                                        <span class="comment-date" dir="ltr">
+                                            <a class="comment-link" href="#comment37559718_111102">
+                                                <span title="2014-06-19 10:04:21Z" class="relativetime-clean">Jun 19 '14 at 10:04</span>
+                                            </a>
+                                        </span>
+                                        <span class="comment-reply" data-uid="9" data-name="Boris van Schooten">
+                                            <i class="fas fa-reply fa-lg"></i>
+                                        </span>
+                                    </div>
+                                    <hr class="mx-0 my-2">
+                                    <div class="comment-add">
+                                        <a href="javascript:void(0)">Thêm bình luận</a>
+                                        <div class="comment-input mt-2" style="display: none">
+                                            <div>
+                                                <input type="text" class="tags-user" />
+                                            </div>
+                                            <textarea class="comment-textarea w-100 mt-2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-1 mx-3">
+                <div class="py-2 px-2 answer">
+                    <div class="d-flex flex-row h-100">
+                        <div class="vote mx-3">
+                            <div class="d-flex flex-column text-center">
+                                <div class="vote-up">
+                                    <a class="vote-up-off" style="color: #f2f2f2;"></a>
+                                </div>
+                                <div class="my-1 vote-count">
+                                    50
+                                </div>
+                                <div class="vote-down">
+                                    <a class="vote-down-off"></a>
+                                </div>
+                                <div class="flex-grow-1">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 comment">
+                            <div class="d-flex flex-column mr-2">
+                                <div class="text-left answer-content w-100">
+                                    <p>This page explains closures so that a programmer can understand them — using working
+                                        JavaScript code. It is not for gurus or functional programmers.</p>
+                                    <p>Closures are
+                                        <em>not hard</em> to understand once the core concept is grokked. However, they are impossible
+                                        to understand by reading any academic papers or academically oriented information
+                                        about them!</p>
+                                </div>
+                                <div class="d-flex flex-row-reverse mt-2">
+                                    <div class="topic-info">
+                                        <div class="text-muted topic-time">
+                                            <i class="far fa-clock"></i> 15 phút trước
+                                        </div>
+                                        <div class="mt-1 text-muted topic-user">
+                                            <i class="far fa-user"></i> sakura
+                                        </div>
+                                    </div>
+                                    <div class="topic-info mr-4">
+                                        <div class="text-muted topic-time">
+                                            <i class="fas fa-pencil-alt"></i> sửa 5 phút trước
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-list">
+                                    <div class="comment-add">
+                                        <a href="javascript:void(0)">Thêm bình luận</a>
+                                        <div class="comment-input mt-2" style="display: none">
+                                            <div>
+                                                <input type="text" class="tags-user" />
+                                            </div>
+                                            <textarea class="comment-textarea w-100 mt-2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-1 mx-3">
+                <div class="py-2 px-2">
+                    <div class="mx-2">
+                        <form action="save" method="POST">
+                            <textarea name="comment-editor" id="comment-editor"></textarea>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        </main>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="lib/summernote/summernote-bs4.js"></script>
+    <script src="lib/summernote/lang/summernote-vi-VN.js"></script>
+    <script src="lib/summernote/summernote-ext-emoji.js"></script>
+    <script src="lib/autosize/autosize.js"></script>
+    <script src="lib/tagsinput/tagsinput.js"></script>
+    <script type='text/javascript' src='js/topic.js'></script>
+</body>
+
+</html>

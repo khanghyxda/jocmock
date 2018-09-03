@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/history.css">
+    <title>Joc</title>
+</head>
+
+<body>
+    <header id="top" class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img id="logo-image" class="logo-image" src="images/logo.jpg" alt="Logo" height="40">
+            </a>
+            <ul class="navbar-nav">
+                <a class="btn btn-sm" href="register.html" style="color: orange">Đăng ký</a>
+                <a class="btn btn-sm" href="login.html">Đăng nhập</a>
+            </ul>
+        </div>
+    </header>
+    <div class="container main-container">
+        <div class="row flex-xl-nowrap main-content">
+            <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                <form class="bd-search d-flex align-items-center">
+                    <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
+                        <input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." autocomplete="off" spellcheck="false"
+                            role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0"
+                            dir="auto" style="position: relative; vertical-align: top;">
+                        <span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;">
+                            <div class="ds-dataset-1"></div>
+                        </span>
+                    </span>
+                    <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#bd-docs-nav"
+                        aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+                            <title>Menu</title>
+                            <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="collapse bd-links" id="bd-docs-nav">
+                    <div class="bd-toc-item active">
+                        <ul class="nav bd-sidenav">
+                            <li class="">
+                                <a href="#">
+                                    Góc cười
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">
+                                    Chuyện trò linh tinh
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="d-none d-xl-block col-xl-3 bd-toc">
+                <div class="hot-topic">
+                    <div class="hot-topic-head mb-3">
+                        <i class="fas fa-fire fa-lg" style="color: #ff9800"></i> Chủ đề nóng
+                    </div>
+                    <div class="hot-topic-body mt-2">
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">18</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Build .NET Standard Library 1.4 using .NET Framework 4.6.1 without visual studio</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">210</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Will my employers contract hold up in court?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">21</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">How might my unwitting houseruling of Sculpt Spell affect play?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">210</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">How long can a fantasy novel stay in metaphorical Kansas?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">18</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Build .NET Standard Library 1.4 using .NET Framework 4.6.1 without visual studio</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">210</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Will my employers contract hold up in court?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot-topic">
+                    <div class="hot-topic-head mb-3 mt-4">
+                        <i class="fas fa-seedling fa-lg" style="color: #ff9800"></i> Chủ đề tranh luận
+                    </div>
+                    <div class="hot-topic-body mt-2">
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">18</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Build .NET Standard Library 1.4 using .NET Framework 4.6.1 without visual studio</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">210</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Will my employers contract hold up in court?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">21</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">How might my unwitting houseruling of Sculpt Spell affect play?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">210</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">How long can a fantasy novel stay in metaphorical Kansas?</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">18</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Build .NET Standard Library 1.4 using .NET Framework 4.6.1 without visual studio</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row w-100 mb-2">
+                            <div class="mr-2 d-flex flex-column">
+                                <div class="topic-votes px-2">210</div>
+                                <div class="flex-grow-1"></div>
+                            </div>
+                            <div class="flex-grow-1 topic-subject">
+                                <a href="#">Will my employers contract hold up in court?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main class="col-12 col-md-9 col-xl-7 py-md-1 pl-md-3 bd-content" role="main">
+                <div class="px-2">
+                    <div class="d-flex flex-row">
+                        <div class="flex-grow-1 p-2">
+                            <h1 class="headline px-1 pt-1">Lịch sử chỉnh sửa</h1>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-0">
+                <div class="pt-2 history">
+                    <div class="d-flex flex-row px-3">
+                        <div class="revision mr-2">
+                            1
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column">
+                            <div class="flex-grow-1"></div>
+                            <span class="subject">Reference: What is variable scope</span>
+                            <div class="flex-grow-1"></div>
+                        </div>
+                        <div class="d-flex flex-row">
+
+                        </div>
+                    </div>
+                    <hr class="my-0 ml-3">
+                    <div class="py-2 px-2">
+                        <div class="d-flex flex-row h-100">
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-column mx-2 mt-1">
+                                    <div class="text-left topic-content w-100">
+                                        <p>According to the android documentation, Day_Of_Month is 1-based (ie '1' means the
+                                            1st day of the month) (see
+                                            <a href="https://developer.android.com/reference/java/util/Calendar#DAY_OF_MONTH" rel="nofollow noreferrer">https://developer.android.com/reference/java/util/Calendar#DAY_OF_MONTH</a> ).
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-row-reverse my-1">
+                                        <div class="topic-info">
+                                            <div class="text-muted topic-time">
+                                                <i class="fas fa-pencil-alt"></i> sửa 5 phút trước
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                </div>
+                <div class="pt-2 history">
+                    <div class="d-flex flex-row px-3">
+                        <div class="revision mr-2">
+                            2
+                        </div>
+                        <div class="flex-grow-1 d-flex flex-column">
+                            <div class="flex-grow-1"></div>
+                            <span class="subject">Reference: What is variable scope</span>
+                            <div class="flex-grow-1"></div>
+                        </div>
+                        <div class="d-flex flex-row">
+
+                        </div>
+                    </div>
+                    <hr class="my-0 ml-3">
+                    <div class="py-2 px-2">
+                        <div class="d-flex flex-row h-100">
+                            <div class="flex-grow-1">
+                                <div class="d-flex flex-column mx-2 mt-1">
+                                    <div class="text-left topic-content w-100">
+                                        <p>According to the android documentation, Day_Of_Month is 1-based (ie '1' means the
+                                            1st day of the month) (see
+                                            <a href="https://developer.android.com/reference/java/util/Calendar#DAY_OF_MONTH" rel="nofollow noreferrer">https://developer.android.com/reference/java/util/Calendar#DAY_OF_MONTH</a> ).
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-row-reverse my-1">
+                                        <div class="topic-info">
+                                            <div class="text-muted topic-time">
+                                                <i class="fas fa-pencil-alt"></i> sửa 5 phút trước
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

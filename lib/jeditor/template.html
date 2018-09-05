@@ -1,48 +1,39 @@
-<div class="jeditor">
+<div class="jeditor" id="{{id}}">
     <div class="jeditor-bar d-flex flex-row border border-bottom-0">
         <div class="jeditor-bar-item">
             <i class="far fa-smile pl-2 pr-1 py-2 text-muted" id="jeditor-emoji" data-toggle="dropdown"></i>
-            <div class="dropdown-menu dropdown-menu-left jeditor-dropdown py-0 border">
+            <div class="dropdown-menu dropdown-menu-left jeditor-dropdown py-0 border" ng-click="$event.stopPropagation()">
                 <div class="emoji-category px-2 py-2 d-flex flex-column">
                     <div class="flex-grow-1"></div>
                     <div>
-                        <img src="../../images/emoji.png" class="active px-2 py-2" />
-                        <img src="../../images/emoji.png" class="px-2 py-2" />
-                        <img src="../../images/emoji.png" class="px-2 py-2" />
+                        <img src="{{emojiCategory.categoryUrl}}" class="px-2 py-2" 
+                        ng-class="categoryIdActive == emojiCategory.categoryId ? 'active' : ''" ng-repeat="emojiCategory in emojiCategoryList" 
+                        ng-click="changeEmojiCategory(emojiCategory.categoryId)"/>
                     </div>
                 </div>
                 <div class="emoji-list px-2 py-2">
                     <div class="d-flex flex-wrap justify-content-between">
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
-                        <img src="../../images/emoji.png" />
+                        <img src="{{emoji.emojiUrl}}" ng-repeat="emoji in emojiDisplayList" ng-click="selectedEmoji($event, emoji)"/>
                     </div>
                 </div>
             </div>
         </div>
         <div class="jeditor-bar-item">
-            <i class="fas fa-file-image px-2 py-2 text-muted" id="jeditor-image"></i>
+            <i class="fas fa-file-image px-2 py-2 text-muted" id="jeditor-image" ng-click="selectImage()"></i>
             <div class="dropdown-menu jeditor-dropdown">
-                <input type="file" id="fileInput" />
+                <input type="file" id="file-{{id}}" onchange="angular.element(this).scope().uploadImage(this)"/>
             </div>
         </div>
         <div class="jeditor-bar-item">
             <i class="far fa-images px-2 py-2 text-muted" id="jeditor-image-url" data-toggle="dropdown"></i>
-            <div class="dropdown-menu jeditor-dropdown">
-                <div class="d-flex flex-row text-muted">
-                    <div class="py-1 px-2">URL</div>
+            <div class="dropdown-menu jeditor-dropdown" ng-click="$event.stopPropagation()">
+                <div class="py-2 px-2" style="font-size: 0.8rem">Đường dẫn hình ảnh</div>
+                <div class="pt-1 pb-2 d-flex flex-row text-muted">
                     <div class="px-2 flex-grow-1">
-                        <input class="w-100">
+                        <input class="w-100" ng-model="imageUrl">
                     </div>
                     <div class="pr-2">
-                        <button>
+                        <button ng-click="addImageUrl()">
                             <i class="fas fa-check text-muted"></i>
                         </button>
                     </div>
@@ -50,14 +41,18 @@
             </div>
         </div>
         <div class="flex-grow-1"></div>
-        <div class="jeditor-bar-item">
+        <div class="jeditor-bar-item" ng-if="mode=='UPDATE'">
             <i class="far fa-save pr-2 py-2 text-success" id="jeditor-save"></i>
         </div>
-        <div class="jeditor-bar-item">
+        <div class="jeditor-bar-item" ng-if="mode=='INSERT'">
             <i class="far fa-paper-plane pr-2 py-2 text-primary" id="jeditor-send"></i>
         </div>
     </div>
     <div class="jeditor-text">
-        <textarea class="w-100 border p-2" name="" id="" rows="5"></textarea>
+        <textarea class="w-100 border p-2" name="" id="textarea-{{id}}" rows="5" ng-model="message"></textarea>
+    </div>
+    <hr class="my-2"/>
+    <div class="jeditor-preview w-100" ng-bind-html="getPreview() | unsafe">
+
     </div>
 </div>

@@ -2,7 +2,7 @@
     <div class="jeditor-bar d-flex flex-row border border-bottom-0">
         <div class="jeditor-bar-item">
             <i class="far fa-smile pl-2 pr-1 py-2 text-muted" id="jeditor-emoji" data-toggle="dropdown"></i>
-            <div class="dropdown-menu dropdown-menu-left jeditor-dropdown py-0 border" ng-click="$event.stopPropagation()">
+            <div class="dropdown-menu dropdown-menu-left jeditor-dropdown py-0 border jeditor-dropdown-emoji" ng-click="$event.stopPropagation()">
                 <div class="emoji-category px-2 py-2 d-flex flex-column">
                     <div class="flex-grow-1"></div>
                     <div>
@@ -21,7 +21,7 @@
         <div class="jeditor-bar-item">
             <i class="fas fa-file-image px-2 py-2 text-muted" id="jeditor-image" ng-click="selectImage()"></i>
             <div class="dropdown-menu jeditor-dropdown">
-                <input type="file" id="file-{{id}}" onchange="angular.element(this).scope().uploadImage(this)"/>
+                <input type="file" accept="image/*" id="file-{{id}}" onchange="angular.element(this).scope().uploadImage(this)"/>
             </div>
         </div>
         <div class="jeditor-bar-item">
@@ -49,7 +49,7 @@
         </div>
     </div>
     <div class="jeditor-text">
-        <textarea class="w-100 border p-2" name="" id="textarea-{{id}}" rows="5" ng-model="message"></textarea>
+        <textarea class="jeditor-textarea w-100 border p-2" name="" id="textarea-{{id}}" rows="5" ng-model="message"></textarea>
     </div>
     <hr class="my-2"/>
     <div class="jeditor-preview w-100" ng-bind-html="getPreview() | unsafe">

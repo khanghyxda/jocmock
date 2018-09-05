@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-#jeditor-textarea {
+.jeditor-textarea, .jeditor-preview {
     font-size: 0.9rem;
 }
 
@@ -58,4 +58,8 @@
 
 .jeditor-preview {
     white-space: pre-wrap;
+}
+
+.jeditor-dropdown-emoji {
+    left: -1px!important;
 }

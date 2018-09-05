@@ -63,3 +63,7 @@
 .jeditor-dropdown-emoji {
     left: -1px!important;
 }
+
+.jeditor-upload-bar {
+    height: 2px;
+}

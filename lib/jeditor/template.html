@@ -42,10 +42,14 @@
         </div>
         <div class="flex-grow-1"></div>
         <div class="jeditor-bar-item" ng-if="mode=='UPDATE'">
-            <i class="far fa-save pr-2 py-2 text-success" id="jeditor-save"></i>
+            <button class="btn btn-outline-light btn-sm border-0" ng-class="message=='' ? 'disabled' : ''">
+                <i class="far fa-save text-success" id="jeditor-save"></i>
+            </button>
         </div>
         <div class="jeditor-bar-item" ng-if="mode=='INSERT'">
-            <i class="far fa-paper-plane pr-2 py-2 text-primary" id="jeditor-send"></i>
+            <button class="btn btn-outline-light btn-sm border-0" ng-class="message=='' ? 'disabled' : ''">
+                <i class="far fa-paper-plane text-primary" id="jeditor-send"></i>
+            </button>
         </div>
     </div>
     <div class="jeditor-text">
